@@ -1,4 +1,5 @@
 package document_calendar;
+
 import java.awt.Desktop;
 import java.io.File;
 import java.text.SimpleDateFormat;
@@ -16,7 +17,8 @@ public class current_time extends Thread {
 
     @Override
     public void run() {
-        while (true) {
+        boolean flag = true;
+        while (flag) {
             Calendar cal = Calendar.getInstance();
             SimpleDateFormat sdf = new SimpleDateFormat("hh:mm");
             String currentTime = sdf.format(cal.getTime());
@@ -37,6 +39,7 @@ public class current_time extends Thread {
                 } catch (Exception e) {
                     System.out.println(e);
                 }
+                flag = false;
             }
         }
     }
