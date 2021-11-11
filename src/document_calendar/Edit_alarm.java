@@ -3,14 +3,19 @@ package document_calendar;
 import static document_calendar.create_thread.ct;
 import static document_calendar.create_thread.file_name;
 import static document_calendar.create_thread.file_time;
+
+import java.util.Formatter;
 import java.util.Scanner;
 
 public class Edit_alarm {
 
+    Formatter f = new Formatter();
+
     public void printFile() {
-        System.out.println("  File                  |  Alarm");
+
+        System.out.format("%35s %20s%n", "File Name", " |  Alarm");
         for (int t = 0; t < create_thread.cnt; t++) {
-            System.out.println(file_name[t] + " |  " + file_time[t] + " ");
+            System.out.format("%35s %20s%n", file_name[t], "|  " + file_time[t]);
         }
     }
 
