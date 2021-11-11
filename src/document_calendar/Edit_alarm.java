@@ -19,7 +19,7 @@ public class Edit_alarm {
         }
     }
 
-    public void run() {
+    public void run(){
         System.out.print("Setting[y\\n]:");
         Scanner in = new Scanner(System.in);
         char c = in.next().charAt(0);

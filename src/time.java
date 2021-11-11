@@ -16,6 +16,8 @@ class access extends Thread {
                 e.printFile();
                 e.run();
                 System.out.println("\nEdited time");
+                e.printFile();
+                break;
             }
         }
     }
