@@ -13,7 +13,7 @@ public class create_thread extends Thread
     static int cnt = 0; // count the number of files
     public static int count = 0;
 
-    File folder = new File("/home/sudeep-23-11/Desktop/JavaProject-DocumentCalendar-master/Documents");
+    File folder = new File("/home/rahul/Desktop/code/multithreading/multithreadingdemo/javafilehandling/Documents");
 
     @Override
     public void run()
