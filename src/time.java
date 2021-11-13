@@ -10,7 +10,7 @@ class access
 
     void printdata()
     {
-        while (create_thread.count < 6)
+        while (create_thread.count < 6)// checking thread count.
         {
             System.out.print("");
             if (create_thread.count == 5)
