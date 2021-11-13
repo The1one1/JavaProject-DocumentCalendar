@@ -3,19 +3,19 @@ package document_calendar;
 import java.io.File;
 import javax.swing.JOptionPane;
 
-public class create_thread 
+public class create_thread extends Thread
 {
 
-     static String[] file_location = new String[30]; // store location of files in string array
-     static String[] file_time = new String[30]; // store the opening time of files in string array
-     static String[] file_name = new String[30];
+    protected static String[] file_location = new String[30]; // store location of files in string array
+    protected static String[] file_time = new String[30]; // store the opening time of files in string array
+    protected static String[] file_name = new String[30];
     static current_time[] ct = new current_time[30]; // array of objects
     static int cnt = 0; // count the number of files
     public static int count = 0;
 
     File folder = new File("/home/hemal/Downloads/JavaProject-DocumentCalendar/Documents");
 
-  //  @Override
+   @Override
     public void run()
     {
 

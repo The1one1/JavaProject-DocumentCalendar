@@ -1,11 +1,11 @@
 import document_calendar.*;
 
-class access 
+class access extends Thread
 {
     void createthread()
     {
         create_thread t = new create_thread();
-        t.run();
+        t.start();
     }
 
     void printdata()
