@@ -13,7 +13,7 @@ public class create_thread
     static int cnt = 0; // count the number of files
     public static int count = 0;
 
-    File folder = new File("/home/hemal/Desktop/JavaProject-DocumentCalendar/Documents");
+    File folder = new File("/home/hemal/Downloads/JavaProject-DocumentCalendar/Documents");
 
   //  @Override
     public void run()
