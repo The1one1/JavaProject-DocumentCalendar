@@ -18,7 +18,7 @@ class access extends Thread
                 Edit_alarm e = new Edit_alarm();
                 e.printFile();
                 e.run();
-                System.out.println("\nEdited time");
+                System.out.println("\nEdited Time");
             }
         }
     }

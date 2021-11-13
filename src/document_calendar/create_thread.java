@@ -6,8 +6,8 @@ import javax.swing.JOptionPane;
 public class create_thread extends Thread
 {
 
-    protected static String[] file_location = new String[30]; // store location of files in string array
-    protected static String[] file_time = new String[30]; // store the opening time of files in string array
+    protected static String[] file_location = new String[30]; // Store location of files in string array
+    protected static String[] file_time = new String[30]; // Store the opening time of files in string array
     protected static String[] file_name = new String[30];
     static current_time[] ct = new current_time[30]; // array of objects
     static int cnt = 0; // count the number of files
