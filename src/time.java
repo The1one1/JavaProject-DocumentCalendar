@@ -1,25 +1,22 @@
 import document_calendar.*;
 
-class access extends Thread
+class access 
 {
     void createthread()
     {
         create_thread t = new create_thread();
-        t.start();
+        t.run();
     }
 
     void printdata()
     {
-        while (create_thread.count < 6)
+        while(true)
         {
             System.out.print("");
-            if (create_thread.count == 5)
-            {
-                Edit_alarm e = new Edit_alarm();
-                e.printFile();
-                e.run();
-                System.out.println("\nEdited time");
-            }
+            Edit_alarm e = new Edit_alarm();
+            e.printFile();
+            e.run();
+            System.out.println("\nEdited time");
         }
     }
 }
